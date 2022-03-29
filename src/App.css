@@ -8,6 +8,11 @@ body {
   min-width: 100px;
 }
 
+.btn-active {
+  background-color: blue;
+  color: white;
+}
+
 
 .alpaca-image {
   position: relative;

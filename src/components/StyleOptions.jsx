@@ -1,27 +1,27 @@
 import Btn from './Btn';
 
-const HairStyles = () => {
+const HairStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Bangs" />
-                        <Btn text="Curls" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Bangs" onClick={props.bangsOnClick}/>
+                        <Btn text="Curls" onClick={props.curlsOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Elegant" />
-                        <Btn text="Fancy" />
-                        <Btn text="Quiff" />
+                        <Btn text="Elegant" onClick={props.elegantOnClick}/>
+                        <Btn text="Fancy" onClick={props.fancyOnClick}/>
+                        <Btn text="Quiff" onClick={props.quiffOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Short" />
+                        <Btn text="Short" onClick={props.shortOnClick}/>
                     </div>
                 </div>
             </div>
@@ -30,16 +30,16 @@ const HairStyles = () => {
 }
 
 
-const EarStyles = () => {
+const EarsStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Tilt-Backward" />
-                        <Btn text="Tilt-Forward" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Tilt-Backward" onClick={props.backOnClick}/>
+                        <Btn text="Tilt-Forward" onClick={props.forwardOnClick}/>
                     </div>
                 </div>
             </div>
@@ -48,23 +48,23 @@ const EarStyles = () => {
 }
 
 
-const EyeStyles = () => {
+const EyesStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Angry" />
-                        <Btn text="Naughty" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Angry" onClick={props.angryOnClick}/>
+                        <Btn text="Naughty" onClick={props.naughtyOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Panda" />
-                        <Btn text="Smart" />
-                        <Btn text="Star" />
+                        <Btn text="Panda" onClick={props.pandaOnClick}/>
+                        <Btn text="Smart" onClick={props.smartOnClick}/>
+                        <Btn text="Star" onClick={props.starOnClick}/>
                     </div>
                 </div>
             </div>
@@ -73,22 +73,22 @@ const EyeStyles = () => {
 }
 
 
-const MouthStyles = () => {
+const MouthStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Astonished" />
-                        <Btn text="Eating" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Astonished" onClick={props.astonishedOnClick}/>
+                        <Btn text="Eating" onClick={props.eatingOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Laugh" />
-                        <Btn text="Tongue" />
+                        <Btn text="Laugh" onClick={props.laughOnClick}/>
+                        <Btn text="Tongue" onClick={props.tongueOnClick}/>
                     </div>
                 </div>
             </div>
@@ -97,21 +97,21 @@ const MouthStyles = () => {
 }
 
 
-const NeckStyles = () => {
+const NeckStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Bend-Backwards" />
-                        <Btn text="Bend-Forward" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Bend-Backwards" onClick={props.backOnClick}/>
+                        <Btn text="Bend-Forward" onClick={props.forwardOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Thick" />
+                        <Btn text="Thick" onClick={props.thickOnClick}/>
                     </div>
                 </div>
             </div>
@@ -120,23 +120,23 @@ const NeckStyles = () => {
 }
 
 
-const LegStyles = () => {
+const LegStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Bubble-Tea" />
-                        <Btn text="Cookie" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Bubble-Tea" onClick={props.teaOnClick}/>
+                        <Btn text="Cookie" onClick={props.cookieOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Game-Console" />
-                        <Btn text="Tilt-Backward" />
-                        <Btn text="Tilt-Forward" />
+                        <Btn text="Game-Console" onClick={props.gameOnClick}/>
+                        <Btn text="Tilt-Backward" onClick={props.backOnClick}/>
+                        <Btn text="Tilt-Forward" onClick={props.forwardOnClick}/>
                     </div>
                 </div>
             </div>
@@ -145,22 +145,22 @@ const LegStyles = () => {
 }
 
 
-const AccStyles = () => {
+const AccStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Earings" />
-                        <Btn text="Flower" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Earings" onClick={props.earingsOnClick}/>
+                        <Btn text="Flower" onClick={props.flowerOnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Glasses" />
-                        <Btn text="Headphone" />
+                        <Btn text="Glasses" onClick={props.glassesOnClick}/>
+                        <Btn text="Headphone" onClick={props.headphoneOnClick}/>
                     </div>
                 </div>
             </div>
@@ -169,51 +169,51 @@ const AccStyles = () => {
 }
 
 
-const BGStyles = () => {
+const BGStyles = (props) => {
     return (
         <>
             <div className="d-flex d-md-block flex-column justify-content-center align-items-center">
                 <h6 className="text-uppercase">Style</h6>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Default" />
-                        <Btn text="Blue 60" />
-                        <Btn text="Blue 70" />
+                        <Btn text="Default" onClick={props.defaultOnClick}/>
+                        <Btn text="Blue 60" onClick={props.blue60OnClick}/>
+                        <Btn text="Blue 70" onClick={props.blue70OnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Green 50" />
-                        <Btn text="Green 60" />
-                        <Btn text="Green 70" />
+                        <Btn text="Green 50" onClick={props.green50OnClick}/>
+                        <Btn text="Green 60" onClick={props.green60OnClick}/>
+                        <Btn text="Green 70" onClick={props.green70OnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Grey 40" />
-                        <Btn text="Grey 70" />
-                        <Btn text="Grey 80" />
+                        <Btn text="Grey 40" onClick={props.grey40OnClick}/>
+                        <Btn text="Grey 70" onClick={props.grey70OnClick}/>
+                        <Btn text="Grey 80" onClick={props.grey80OnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Red 50" />
-                        <Btn text="Red 60" />
-                        <Btn text="Red 70" />
+                        <Btn text="Red 50" onClick={props.red50OnClick}/>
+                        <Btn text="Red 60" onClick={props.red60OnClick}/>
+                        <Btn text="Red 70" onClick={props.red70OnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Yellow 50" />
-                        <Btn text="Yellow 60" />
-                        <Btn text="Yellow 70" />
+                        <Btn text="Yellow 50" onClick={props.yellow50OnClick}/>
+                        <Btn text="Yellow 60" onClick={props.yellow60OnClick}/>
+                        <Btn text="Yellow 70" onClick={props.yellow70OnClick}/>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Btn text="Dark Blue 30" />
-                        <Btn text="Dark Blue 50" />
-                        <Btn text="Dark Blue 70" />
+                        <Btn text="Dark Blue 30" onClick={props.darkBlue30OnClick}/>
+                        <Btn text="Dark Blue 50" onClick={props.darkBlue50OnClick}/>
+                        <Btn text="Dark Blue 70" onClick={props.darkBlue70OnClick}/>
                     </div>
                 </div>
             </div>
@@ -222,4 +222,4 @@ const BGStyles = () => {
 }
 
 
-export { HairStyles, EarStyles, EyeStyles, MouthStyles, NeckStyles, LegStyles, AccStyles, BGStyles };
+export { HairStyles, EarsStyles, EyesStyles, MouthStyles, NeckStyles, LegStyles, AccStyles, BGStyles };

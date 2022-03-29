@@ -1,18 +1,18 @@
-import {background, neck, nose, mouth, ear, eye, hair, leg, acc} from './images';
+import {background, neck, nose, mouth, ears, eyes, hair, leg, acc} from './images';
 
-const AlpacaImage = () => {
+const AlpacaImage = (props) => {
     return (
         <div className="alpaca-image">
-            <img src={background.default} alt="default background" />
-            <img src={neck.default} alt="default neck" />
+            <img src={props.bg} alt="default background" />
+            <img src={props.neck} alt="default neck" />
             <img src={nose} alt="default nose" />
-            <img src={mouth.default} alt="default mouth" />
-            <img src={ear.default} alt="default ears" />
-            <img src={hair.default} alt="default hair" />
-            <img src={eye.default} alt="default eyes" />
-            <img src={leg.default} alt="default leg" />
+            <img src={props.mouth} alt="default mouth" />
+            <img src={props.ears} alt="default ears" />
+            <img src={props.hair} alt="default hair" />
+            <img src={props.eyes} alt="default eyes" />
+            <img src={props.leg} alt="default leg" />
             {/* Accessories */}
-            <img src={acc.default} alt="" />
+            <img src={props.acc} alt="" />
         </div>
     )
 }

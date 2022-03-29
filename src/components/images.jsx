@@ -1,22 +1,22 @@
 // Backgrounds
-import backgroundDefault from '../assets/backgrounds/blue50.png';
-import backgroundBlue60 from '../assets/backgrounds/blue60.png';
-import backgroundBlue70 from '../assets/backgrounds/blue70.png';
-import backgroundDarkBlue30 from '../assets/backgrounds/darkblue30.png';
-import backgroundDarkBlue50 from '../assets/backgrounds/darkblue50.png';
-import backgroundDarkBlue70 from '../assets/backgrounds/darkblue70.png';
-import backgroundGreen50 from '../assets/backgrounds/green50.png';
-import backgroundGreen60 from '../assets/backgrounds/green60.png';
-import backgroundGreen70 from '../assets/backgrounds/green70.png';
-import backgroundGrey40 from '../assets/backgrounds/grey40.png';
-import backgroundGrey70 from '../assets/backgrounds/grey70.png';
-import backgroundGrey80 from '../assets/backgrounds/grey80.png';
-import backgroundRed50 from '../assets/backgrounds/red50.png';
-import backgroundRed60 from '../assets/backgrounds/red60.png';
-import backgroundRed70 from '../assets/backgrounds/red70.png';
-import backgroundYellow50 from '../assets/backgrounds/yellow50.png';
-import backgroundYellow60 from '../assets/backgrounds/yellow60.png';
-import backgroundYellow70 from '../assets/backgrounds/yellow70.png';
+import bgDefault from '../assets/backgrounds/blue50.png';
+import bgBlue60 from '../assets/backgrounds/blue60.png';
+import bgBlue70 from '../assets/backgrounds/blue70.png';
+import bgDarkBlue30 from '../assets/backgrounds/darkblue30.png';
+import bgDarkBlue50 from '../assets/backgrounds/darkblue50.png';
+import bgDarkBlue70 from '../assets/backgrounds/darkblue70.png';
+import bgGreen50 from '../assets/backgrounds/green50.png';
+import bgGreen60 from '../assets/backgrounds/green60.png';
+import bgGreen70 from '../assets/backgrounds/green70.png';
+import bgGrey40 from '../assets/backgrounds/grey40.png';
+import bgGrey70 from '../assets/backgrounds/grey70.png';
+import bgGrey80 from '../assets/backgrounds/grey80.png';
+import bgRed50 from '../assets/backgrounds/red50.png';
+import bgRed60 from '../assets/backgrounds/red60.png';
+import bgRed70 from '../assets/backgrounds/red70.png';
+import bgYellow50 from '../assets/backgrounds/yellow50.png';
+import bgYellow60 from '../assets/backgrounds/yellow60.png';
+import bgYellow70 from '../assets/backgrounds/yellow70.png';
 
 // Neck
 import neckDefault from '../assets/neck/default.png';
@@ -72,32 +72,32 @@ import accGlasses from '../assets/accessories/glasses.png';
 
 
 //
-const background = {
-    default: backgroundDefault,
-    blue60: backgroundBlue60,
-    blue70: backgroundBlue70,
-    darkBlue30: backgroundDarkBlue30,
-    darkBlue50: backgroundDarkBlue50,
-    darkBlue70: backgroundDarkBlue70,
-    green50: backgroundGreen50,
-    green60: backgroundGreen60,
-    green70: backgroundGreen70,
-    grey40: backgroundGrey40,
-    grey70: backgroundGrey70,
-    grey80: backgroundGrey80,
-    red50: backgroundRed50,
-    red60: backgroundRed60,
-    red70: backgroundRed70,
-    yellow50: backgroundYellow50,
-    yellow60: backgroundYellow60,
-    yellow70: backgroundYellow70
+const bg = {
+    default: bgDefault,
+    blue60: bgBlue60,
+    blue70: bgBlue70,
+    darkBlue30: bgDarkBlue30,
+    darkBlue50: bgDarkBlue50,
+    darkBlue70: bgDarkBlue70,
+    green50: bgGreen50,
+    green60: bgGreen60,
+    green70: bgGreen70,
+    grey40: bgGrey40,
+    grey70: bgGrey70,
+    grey80: bgGrey80,
+    red50: bgRed50,
+    red60: bgRed60,
+    red70: bgRed70,
+    yellow50: bgYellow50,
+    yellow60: bgYellow60,
+    yellow70: bgYellow70
 };
 
 //
 const neck = {
     default: neckDefault,
-    bendBack: neckBendBack,
-    bendForward: neckBendForward,
+    back: neckBendBack,
+    forward: neckBendForward,
     thick: neckThick
 };
 
@@ -114,14 +114,14 @@ const mouth = {
 };
 
 //
-const ear = {
+const ears = {
     default: earDefault,
     back: earBack,
     forward: earForward
 };
 
 //
-const eye = {
+const eyes = {
     default: eyeDefault,
     angry: eyeAngry,
     naughty: eyeNaughty,
@@ -133,7 +133,7 @@ const eye = {
 //
 const hair = {
     default: hairDefault,
-    bang: hairBang,
+    bangs: hairBang,
     curls: hairCurls,
     elegant: hairElegant,
     fancy: hairFancy,
@@ -152,13 +152,13 @@ const leg = {
 }
 
 //
-const acc = {
-    default: "#",
+const accessories = {
+    default: null,
     headphone: accHeadphone,
-    earing: accEaring,
+    earings: accEaring,
     flower: accFlower,
     glasses: accGlasses
 
 }
 
-export { background, neck, nose, mouth, ear, eye, hair, leg, acc };
+export { bg, neck, nose, mouth, ears, eyes, hair, leg, accessories };
